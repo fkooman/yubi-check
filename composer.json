@@ -1,0 +1,25 @@
+{
+    "authors": [
+        {
+            "email": "fkooman@tuxed.net",
+            "name": "Fran\u00e7ois Kooman"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "fkooman\\YubiCheck\\": "src/",
+            "fkooman\\YubiCheck\\Tests\\": "tests/"
+        }
+    },
+    "description": "Simple YubiKey OTP checker for the Web",
+    "license": "MIT",
+    "name": "fkooman/yubi-check",
+    "require": {
+        "fkooman/yubitwee": "^1",
+        "php": ">5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5"
+    },
+    "type": "project"
+}
