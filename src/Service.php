@@ -15,7 +15,8 @@ class Service
     }
 
     /**
-     * @param  array $request
+     * @param array $request
+     *
      * @return \fkooman\YubiCheck\Response
      */
     public function run(Request $request)

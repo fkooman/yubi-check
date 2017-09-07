@@ -9,6 +9,9 @@ use PHPUnit\Framework\TestCase;
 
 class ServiceTest extends TestCase
 {
+    /**
+     * @return void
+     */
     public function testGet()
     {
         $validator = new Validator(new MockHttpClient('testOkay'));
@@ -27,6 +30,9 @@ class ServiceTest extends TestCase
         $this->assertSame('<html><head><title>YubiCheck</title></head><body><h1>YubiCheck</h1><form method="post"><label>Yubi OTP <input type="text" name="yubi_otp"><input type="submit" value="Check"></form></body></html>', $response->getBody());
     }
 
+    /**
+     * @return void
+     */
     public function testVerifyOtp()
     {
         $s = new Service(

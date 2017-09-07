@@ -35,6 +35,9 @@ class MockHttpClient implements HttpClientInterface
         $this->testName = $testName;
     }
 
+    /**
+     * @return string|null
+     */
     public function get(array $uriList)
     {
         switch ($this->testName) {

@@ -35,6 +35,9 @@ class MockRandom implements RandomInterface
         $this->randomValue = $randomValue;
     }
 
+    /**
+     * @return string
+     */
     public function getNonce()
     {
         return $this->randomValue;
