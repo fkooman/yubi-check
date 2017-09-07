@@ -20,16 +20,25 @@ class Response
         $this->body = (string) $body;
     }
 
+    /**
+     * @return int
+     */
     public function getStatusCode()
     {
         return $this->statusCode;
     }
 
+    /**
+     * @return string
+     */
     public function getBody()
     {
         return $this->body;
     }
 
+    /**
+     * @return void
+     */
     public function send()
     {
         http_response_code($this->statusCode);

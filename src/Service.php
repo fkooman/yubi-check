@@ -6,6 +6,7 @@ use fkooman\YubiTwee\Validator;
 
 class Service
 {
+    /** @var \fkooman\YubiTwee\Validator */
     private $validator;
 
     public function __construct(Validator $validator)
@@ -14,7 +15,8 @@ class Service
     }
 
     /**
-     * @param array $request
+     * @param  array $request
+     * @return \fkooman\YubiCheck\Response
      */
     public function run(Request $request)
     {
@@ -30,6 +32,9 @@ class Service
         }
     }
 
+    /**
+     * @return \fkooman\YubiCheck\Response
+     */
     private function showYubiForm()
     {
         $htmlPage = '<html><head><title>YubiCheck</title></head><body><h1>YubiCheck</h1><form method="post"><label>Yubi OTP <input type="text" name="yubi_otp"><input type="submit" value="Check"></form></body></html>';
@@ -37,6 +42,9 @@ class Service
         return new Response(200, [], $htmlPage);
     }
 
+    /**
+     * @return \fkooman\YubiCheck\Response
+     */
     private function validateYubiOtp($yubiOtp)
     {
         $response = $this->validator->verify($yubiOtp);

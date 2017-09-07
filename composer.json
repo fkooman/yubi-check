@@ -13,7 +13,7 @@
     },
     "description": "Simple YubiKey OTP checker for the Web",
     "license": "MIT",
-    "name": "fkooman/yubi-check",
+    "name": "fkooman/yubicheck",
     "require": {
         "fkooman/yubitwee": "^1",
         "php": ">5.4"

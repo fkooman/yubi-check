@@ -4,8 +4,8 @@ Very simple PHP application to verify a YubiKey OTP at the YubiCo servers.
 
 # Development
 
-    $ git clone https://github.com/fkooman/yubi-check
-    $ cd yubi-check
+    $ git clone https://github.com/fkooman/yubicheck
+    $ cd yubicheck
     $ composer install
 
 To run PHP's built in web server:
