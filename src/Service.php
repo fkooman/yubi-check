@@ -17,7 +17,7 @@ class Service
     /**
      * @param Request $request
      *
-     * @return \fkooman\YubiCheck\Response
+     * @return Response
      */
     public function run(Request $request)
     {
@@ -34,7 +34,7 @@ class Service
     }
 
     /**
-     * @return \fkooman\YubiCheck\Response
+     * @return Response
      */
     private function showYubiForm()
     {
@@ -46,7 +46,7 @@ class Service
     /**
      * @param string $yubiOtp
      *
-     * @return \fkooman\YubiCheck\Response
+     * @return Response
      */
     private function validateYubiOtp($yubiOtp)
     {
