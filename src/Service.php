@@ -15,7 +15,7 @@ class Service
     }
 
     /**
-     * @param array $request
+     * @param Request $request
      *
      * @return \fkooman\YubiCheck\Response
      */
@@ -44,6 +44,8 @@ class Service
     }
 
     /**
+     * @param string $yubiOtp
+     *
      * @return \fkooman\YubiCheck\Response
      */
     private function validateYubiOtp($yubiOtp)

@@ -36,6 +36,8 @@ class Request
     }
 
     /**
+     * @param string $key
+     *
      * @return string
      */
     public function getPostParameter($key)
